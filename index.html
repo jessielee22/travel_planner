@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacation Planner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Vacation Planner</h1>
+
+    <form id="vacationForm">
+      <h2>Destination and Dates</h2>
+      <label for="destination">Destination:</label>
+      <input type="text" id="destination" required>
+      <label for="departureDate">Departure Date:</label>
+      <input type="date" id="departureDate" required>
+      <label for="returnDate">Return Date:</label>
+      <input type="date" id="returnDate" required>
+
+      <!-- Add more sections for Accommodation, Transportation, Itinerary, etc. -->
+
+      <h2>Accommodation</h2>
+      <label for="hotelName">Hotel/Resort Name:</label>
+      <input type="text" id="hotelName">
+      <!-- Add more fields for accommodation details -->
+
+      <!-- Repeat similar structures for other sections -->
+
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
