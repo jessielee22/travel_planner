@@ -1,28 +1,39 @@
 /*this contributes to the way the website is looks   */
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
-  background-color: #fff; /* White background */
-  color: #333; /* Dark text color */
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6; /* Light grey background */
 }
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: #ffebf2; /* Light pink background */
-  padding: 20px;
+.dashboard {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-  color: #ff007f; /* Pink heading color */
+.dashboard-header {
+  background-color: #ff007f; /* Pink header background */
+  color: #fff; /* White header text color */
+  padding: 20px;
+  text-align: center;
+}
+
+.dashboard-content {
+  padding: 20px;
+}
+
+.dashboard-section {
+  margin-bottom: 20px;
 }
 
 label {
   display: block;
   margin-top: 10px;
-  color: #ff007f; /* Pink label color */
+  color: #333; /* Dark label color */
 }
 
 input {
@@ -33,9 +44,8 @@ input {
 }
 
 button {
-  margin-top: 20px;
-  background-color: #ff007f; /* Pink button background color */
-  color: #fff; /* White button text color */
+  background-color: #ff007f;
+  color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -43,9 +53,12 @@ button {
 }
 
 button:hover {
-  background-color: #d6006b; /* Darker pink on hover */
+  background-color: #d6006b;
 }
 
-#output {
+.dashboard-output {
   margin-top: 20px;
+  padding: 20px;
+  background-color: #f0f0f0; /* Light grey output background */
+  border-radius: 5px;
 }
